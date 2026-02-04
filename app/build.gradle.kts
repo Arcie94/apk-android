@@ -85,7 +85,7 @@ dependencies {
     
     // DI
     implementation(libs.hilt.android)
-    ksp(libs.hilt.compiler)
+    ksp("com.google.dagger:hilt-android-compiler:2.50")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
