@@ -27,7 +27,7 @@ jobs:
       
     - name: Build with Gradle
       # Using 'gradle' directly since wrapper is missing
-      run: gradle assembleDebug --no-daemon
+      run: gradle assembleDebug --no-daemon --stacktrace --scan
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
